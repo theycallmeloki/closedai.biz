@@ -39,20 +39,50 @@
   </script>
   <body>
     <div id="app" class="manifesto mx-auto max-w-4xl text-center">
-      <img src="https://i.imgur.com/Lp2rOGj.png" alt="Manifesto Image" class="manifesto-img mx-auto mb-8">
+      <img src="https://i.imgur.com/pVYSYCh.png" alt="Manifesto Image" class="manifesto-img mx-auto mb-8">
       <h1 class="text-3xl sm:text-5xl font-bold text-gray-800 mb-8">
         ClosedAI.biz
       </h1>
       <p class="text-md sm:text-xl text-gray-600 mb-4">{{ paragraphOne }}</p>
       <p class="text-md sm:text-lg text-gray-600">{{ paragraphTwo }}</p>
+      <div class="additional-section py-8">
+        <!-- <h2 class="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
+          ClosedAI.biz
+        </h2> -->
+        <p class="text-md sm:text-sm text-gray-600 mb-4">
+          {{ subTitleOne }}
+        </p>
+        
+      <div class="additional-section py-8">
+        <!-- <h2 class="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
+          Synaptic Concoctions – Brewing Ideas into Reality
+        </h2> -->
+        <p class="text-md sm:text-xl text-gray-600 mb-4">
+          {{ subTitleTwo }}
+        </p>
+      </div>
+      
+      <div class="additional-section py-8">
+        <!-- <h2 class="text-2xl sm:text-4xl font-bold text-gray-800 mb-6">
+          Pixel Perfect – Crafting Visual Narratives
+        </h2> -->
+        <p class="text-md sm:text-lg text-gray-600 mb-4">
+          {{ subTitleThree }}
+        </p>
+      </div>
     </div>
+
+    
+    </div>
+    
 
     <script>
       Vue.createApp({
         data() {
           return {
-            paragraphOne: `Our manifesto tackles the hard takeoff scenario head-on: if a hard takeoff is imminent, and crafting a safe AI is more intricate than its perilous counterpart, then by open-sourcing every nugget of knowledge, we empower every mind. With this, even those with just a spark of hardware can contribute to a safe AI, preempting the risk of a hard takeoff.`,
-            paragraphTwo: `As we navigate the labyrinth of AI creation, we at ClosedAI champion perpetual openness. 'Closed' in ClosedAI is a playful paradox because our doors are always open, ensuring that the bounties of AI are in the hands of everyone from the very beginning. It's more than okay to share the lexicon of our science—it's essential. Open-sourcing isn't just a fleeting strategy for us; it's our steadfast commitment, fortifying the global community for the long haul, progressing humanity onwards to becoming a type II civilization on the Kardashev scale.`,
+            paragraphTwo: `We at ClosedAI champion perpetual openness. 'Closed' in ClosedAI is a playful paradox because our doors are always open, ensuring that the bounties of AI are in the hands of everyone from the very beginning. It's more than okay to share the lexicon of our science—it's essential. Open-sourcing is our steadfast commitment, fortifying the global community for the long haul, progressing humanity onwards to becoming a type II civilization on the Kardashev scale.`,
+            subTitleTwo: `ClosedAI makes movies, games, content, ads, lighthouses, products, microservices, scalable decentralized compute units and assorted chilled beverages for the personal amusement of the aspiring neochibi web3 niche internet microcelebrity status esoteric hipster sys-admin indie maker they call Loki.*`,
+            subTitleThree: `*We occassionally release them to the general public.`,
           };
         },
       }).mount("#app");
